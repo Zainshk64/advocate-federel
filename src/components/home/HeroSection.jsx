@@ -59,8 +59,8 @@ const HeroSection = () => {
       <div className="absolute top-0 left-[15%] w-px h-full bg-gradient-to-b from-transparent via-gold-400/20 to-transparent hidden lg:block"></div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 lg:px-6 relative z-10">
-        <div className="max-w-3xl">
+      <div className="container mx-auto px-4 py-44 lg:px-6 relative z-10">
+        <div className="max-w-3xl ">
           {/* Content with Fade In Animation */}
           <div className={`transition-all duration-1000 ease-out ${
             isLoaded 
@@ -68,7 +68,7 @@ const HeroSection = () => {
               : 'opacity-0 translate-y-10'
           }`}>
             {/* Badge */}
-            <div className={`inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 transition-all duration-1000 delay-200 ${
+            <div className={`inline-flex  items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 transition-all duration-1000 delay-200 ${
               isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
             }`}>
               <Shield className="w-4 h-4 text-gold-400" />
@@ -123,18 +123,17 @@ const HeroSection = () => {
         </div>
 
         {/* Right Side - Floating Justice Icon (visible on large screens) */}
-        <div className={`hidden xl:block absolute right-20 top-1/2 -translate-y-1/2 transition-all duration-1000 delay-1000 ${
+        {/* <div className={`hidden xl:block absolute right-20 top-1/2 -translate-y-1/2 transition-all duration-1000 delay-1000 ${
           isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
         }`}>
           <div className="relative">
             <div className="w-32 h-32 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl flex items-center justify-center animate-float">
               <Scale className="w-16 h-16 text-gold-400/80" />
             </div>
-            {/* Floating rings */}
             <div className="absolute -inset-4 border border-gold-400/20 rounded-3xl animate-ping-slow"></div>
             <div className="absolute -inset-8 border border-gold-400/10 rounded-3xl"></div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Scroll Down Indicator */}
